@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Month">
+
+     <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+         android:title="Show Spending"
+         android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="795dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    <TextView
+        android:id="@+id/monthly"
+        android:layout_width="match_parent"
+        android:tag="@string/monthly"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/monthly"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+
+    <TextView
+        android:id="@+id/monthSelected"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/january"
+         android:background="@color/white"
+          android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/january"
+        android:text="@string/january"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/february"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/february"
+        android:text="@string/february"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/march"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/march"
+        android:text="@string/march"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/april"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/april"
+        android:text="@string/april"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/may"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/may"
+        android:text="@string/may"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/june"
+         android:background="@color/white"
+          android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/june"
+        android:text="@string/june"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/july"
+         android:background="@color/white"
+          android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/july"
+        android:text="@string/july"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/august"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/august"
+        android:text="@string/august"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+       />
+
+    <TextView
+        android:id="@+id/september"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/september"
+        android:text="@string/september"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+       />
+
+    <TextView
+        android:id="@+id/october"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/october"
+        android:text="@string/october"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/november"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/november"
+        android:text="@string/november"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/december"
+          android:visibility="gone"
+         android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:tag="@string/december"
+        android:text="@string/december"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+       />
+    <TextView
+        android:id="@+id/weekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/white"
+        android:padding="5dp"
+        android:tag="@string/weekly"
+        android:text="@string/weekly"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+    <TextView
+        android:id="@+id/daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+         android:background="@color/white"
+        android:tag="@string/Daily"
+        android:text="@string/Daily"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/yearly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+         android:background="@color/white"
+        android:tag="@string/Yearly"
+        android:text="@string/Yearly"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/white"
+        android:padding="5dp"
+        android:tag="All"
+        android:text="@string/all"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+  </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+      <style name="animation">
+       <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+       <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+    <item name="android:textColor">#FF018786</item>  // you can change the color of the yearPiker dialog
+    <item name="android:textColorPrimary">#FF018786</item> // you can change the color of the yearPiker dialog
+  </style>
+</resources>

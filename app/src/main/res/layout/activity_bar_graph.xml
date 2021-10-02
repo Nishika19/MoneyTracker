@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarGraphActivity">
+
+         <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+             android:elevation="50dp"
+             android:title="Expense Bar Graph"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+    <Button
+        android:id="@+id/expense_pie_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:elevation="10dp"
+        android:background="@android:color/transparent"
+        android:text="expense"
+        app:layout_constraintEnd_toStartOf="@id/income_pie_chart"
+        app:layout_constraintTop_toTopOf="@+id/pieChart" />
+
+    <Button
+        android:id="@+id/income_pie_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="Income"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="@id/expense_pie_chart"
+        app:layout_constraintTop_toTopOf="@+id/pieChart" />
+
+      </Toolbar>
+
+       <TableLayout
+            android:id="@+id/tableLayout"
+           android:elevation="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/pie_chart_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_pie_chart_24"
+                    android:textColor="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/bar_graph_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_bar_chart_24"
+                    android:textColor="@color/black" />
+  </TableRow>
+
+                  <TableRow
+                android:id="@+id/textView_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pi_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Pie Chart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Bar Graph"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+                  </TableRow>
+ </TableLayout>
+
+ <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/idBarChart"
+      android:layout_width="0dp"
+        android:layout_height="569dp"
+     android:layout_marginBottom="55dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="104dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

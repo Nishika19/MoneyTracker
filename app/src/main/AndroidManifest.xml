@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moneytracker">
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name="util.TransactionApi"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".pushNotification"
+            android:exported="true" />
+        <activity android:name=".IncomeBarGraph" />
+        <activity android:name=".BarGraphActivity" />
+        <activity android:name=".Income_pie_chart" />
+        <activity android:name=".GraphActivity" />
+        <activity android:name=".AddCategoryActivity" />
+        <activity android:name=".Month" />
+        <activity android:name=".transactionInfo" />
+        <activity android:name=".SelectCategoryActivity" />
+        <activity android:name=".AddTransactionActivity" />
+        <activity android:name=".SpendingActivity"></activity>
+        <activity android:name=".CreateAccountActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_baseline_monetization_on_24"/>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/dark_red"/>
+
+
+    </application>
+
+</manifest>
